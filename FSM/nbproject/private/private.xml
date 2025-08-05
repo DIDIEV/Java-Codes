@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Didie/OneDrive/Desktop/Java/FSM/src/fsm/FSM.java</file>
             <file>file:/C:/Users/Didie/OneDrive/Desktop/Java/FSM/src/VistaMaquina/Matrix.java</file>
+            <file>file:/C:/Users/Didie/OneDrive/Desktop/Java/FSM/src/fsm/Machine.java</file>
+            <file>file:/C:/Users/Didie/OneDrive/Desktop/Java/FSM/src/fsm/Estados.java</file>
+            <file>file:/C:/Users/Didie/OneDrive/Desktop/Java/FSM/src/fsm/Transiciones.java</file>
         </group>
     </open-files>
 </project-private>
