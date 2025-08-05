@@ -15,6 +15,11 @@ public class FSM {
         Matrix prueba = new Matrix();
         prueba.setVisible(true);
         prueba.setLocationRelativeTo(null);
+        
+        //String datos = "ab,bc,cd,ef";
+        //String[] arreglo = datos.split(",");
+
+        
     }
     
 }

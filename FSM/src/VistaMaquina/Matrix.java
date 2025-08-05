@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package VistaMaquina;
-
+import fsm.*;
 /**
  *
  * @author Didie
@@ -119,13 +119,13 @@ public class Matrix extends javax.swing.JFrame {
         estaEntrada2.setEditable(false);
         estaEntrada2.setText("Entrada");
 
-        jLabel13.setText("Estado 2 ");
+        jLabel13.setText("Estado 1 ");
 
         estaEntrada1.setEditable(false);
         estaEntrada1.setText("Entrada");
 
         estaSalida1.setEditable(false);
-        estaSalida1.setText("Salida ");
+        estaSalida1.setText("SalidaES ");
 
         estaSalida2.setEditable(false);
         estaSalida2.setText("Salida ");
@@ -133,12 +133,12 @@ public class Matrix extends javax.swing.JFrame {
         estaEntrada4.setEditable(false);
         estaEntrada4.setText("Entrada");
 
-        jLabel15.setText("Estado 1 ");
+        jLabel15.setText("Estado 0 ");
 
         estaSalida4.setEditable(false);
         estaSalida4.setText("Salida ");
 
-        jLabel16.setText("Estado 4 ");
+        jLabel16.setText("Estado 3 ");
 
         estaSalida3.setEditable(false);
         estaSalida3.setText("Salida ");
@@ -146,7 +146,7 @@ public class Matrix extends javax.swing.JFrame {
         estaEntrada3.setEditable(false);
         estaEntrada3.setText("Entrada");
 
-        jLabel14.setText("Estado 3 ");
+        jLabel14.setText("Estado 2 ");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -236,7 +236,7 @@ public class Matrix extends javax.swing.JFrame {
 
         jLabel4.setText("Funcines de salida");
 
-        jLabel19.setText("Salida 2");
+        jLabel19.setText("Salida 1");
 
         jLabel21.setText("Alfabeto");
 
@@ -250,7 +250,7 @@ public class Matrix extends javax.swing.JFrame {
             }
         });
 
-        jLabel20.setText("Salida 1");
+        jLabel20.setText("Salida 0");
 
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel18.setText("Salidas");
@@ -258,12 +258,12 @@ public class Matrix extends javax.swing.JFrame {
         entrada1.setEditable(false);
         entrada1.setText("Entrada");
 
-        jLabel17.setText("Salida 3");
+        jLabel17.setText("Salida 2");
 
         entrada4.setEditable(false);
         entrada4.setText("Entrada");
 
-        jLabel22.setText("Salida 4");
+        jLabel22.setText("Salida 3");
 
         entrada3.setEditable(false);
         entrada3.setText("Entrada");
@@ -512,22 +512,56 @@ public class Matrix extends javax.swing.JFrame {
     }//GEN-LAST:event_estado4MouseClicked
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-        if(!this.alfaEntra.getText().isEmpty() && !this.alfaSale.getText().isEmpty()){
-            
-        }else{
-            this.jToggleButton1.setText("Algún campo se encuentra incompleto");
-        } 
+        int cuenta = 0;
+
+        if (this.estado1.isEnabled()){
+            cuenta ++; 
+        }
+        if (this.estado2.isEnabled()){
+
+            cuenta++;
+        }
+        if (this.estado3.isEnabled()){
+
+            cuenta++;
+        }
+        if (this.estado4.isEnabled()){
+
+            cuenta++;
+        }
+        Estado[] estados = new Estado[cuenta];
+        switch(cuenta){
+            case 1:
+                estados[0] = new Estado("S0");
+                estados[0].agregarTransicion(this.estaEntrada1.getText(),this.salida1.getText(),estados[0].siguienteEstado(this.estaSalida1.getText()));
+                break;
+            case 2:
+                estados[0] = new Estado("S0");
+                estados[1] = new Estado("S1");
+                break;
+            case 3:
+                estados[0] = new Estado("S0");
+                estados[1] = new Estado("S1");
+                estados[2] = new Estado("S2");
+                break;
+            case 4:
+                estados[0] = new Estado("S3");
+                estados[1] = new Estado("S3");
+                estados[2] = new Estado("S3");
+                estados[3] = new Estado("S3");
+                break;
+        }
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     private void alfaEntraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alfaEntraMouseClicked
         if(this.alfaEntra.getText().equals("Entrada ")){
             this.alfaEntra.setText("");
-        } 
+        }
     }//GEN-LAST:event_alfaEntraMouseClicked
 
     private void alfaSaleMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_alfaSaleMouseClicked
         if(this.alfaSale.getText().equals("Salida")){
-            this.alfaEntra.setText("");
+            this.alfaSale.setText("");
         } 
     }//GEN-LAST:event_alfaSaleMouseClicked
  

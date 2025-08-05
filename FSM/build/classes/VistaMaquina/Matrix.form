@@ -229,7 +229,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Estado 2 "/>
+                <Property name="text" type="java.lang.String" value="Estado 1 "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="estaEntrada1">
@@ -241,7 +241,7 @@
             <Component class="javax.swing.JTextField" name="estaSalida1">
               <Properties>
                 <Property name="editable" type="boolean" value="false"/>
-                <Property name="text" type="java.lang.String" value="Salida "/>
+                <Property name="text" type="java.lang.String" value="SalidaES "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="estaSalida2">
@@ -258,7 +258,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel15">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Estado 1 "/>
+                <Property name="text" type="java.lang.String" value="Estado 0 "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="estaSalida4">
@@ -269,7 +269,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel16">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Estado 4 "/>
+                <Property name="text" type="java.lang.String" value="Estado 3 "/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="estaSalida3">
@@ -286,7 +286,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Estado 3 "/>
+                <Property name="text" type="java.lang.String" value="Estado 2 "/>
               </Properties>
             </Component>
           </SubComponents>
@@ -445,7 +445,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel19">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Salida 2"/>
+                <Property name="text" type="java.lang.String" value="Salida 1"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel21">
@@ -469,7 +469,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel20">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Salida 1"/>
+                <Property name="text" type="java.lang.String" value="Salida 0"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel18">
@@ -486,7 +486,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel17">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Salida 3"/>
+                <Property name="text" type="java.lang.String" value="Salida 2"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="entrada4">
@@ -497,7 +497,7 @@
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel22">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Salida 4"/>
+                <Property name="text" type="java.lang.String" value="Salida 3"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="entrada3">
